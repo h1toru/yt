@@ -29,7 +29,6 @@ patcher-args = """\
   -d 'Custom header for YouTube' \
   -e 'Settings for YouTube' -OrvxSettingsLabel='Premium options' -OinsertPosition='About' \
   -e 'Theme' -OdarkThemeBackgroundColor='#000000' -OlightThemeBackgroundColor='#FFFFFF' \
-  \
   -e 'Return YouTube Dislike' \
   -e 'Return YouTube Username' \
   -e 'SponsorBlock' \
