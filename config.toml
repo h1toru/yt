@@ -5,7 +5,7 @@ remove-rv-integrations-checks = true
 rv-brand = ""
 
 cli-source = "j-hc/revanced-cli"
-cli-version = "dev"
+cli-version = "latest"
 
 patches-source = "anddea/revanced-patches"
 patches-version = "dev"
@@ -58,9 +58,6 @@ app-name = "Spotify"
 version = "auto"
 arch = "arm64-v8a"
 riplib = false
-
-patches-source = "anddea/revanced-patches"
-patches-version = "dev"
 
 patcher-args = """\
   --rip-lib x86_64 --rip-lib x86 --rip-lib armeabi-v7a \
