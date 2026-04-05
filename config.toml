@@ -22,28 +22,39 @@ riplib = false
 
 patcher-args = """\
   --rip-lib x86_64 --rip-lib x86 --rip-lib armeabi-v7a \
-  -e 'Change version code' \
-  -e 'GmsCore support' -OpackageNameYouTube='h1toru.rvm.ytp' \
-  -e 'Custom branding name for YouTube' -OappName='YouTube Premium' \
-  -d 'Custom branding icon for YouTube' \
-  -d 'Custom header for YouTube' \
-  -e 'Settings for YouTube' -OrvxSettingsLabel='Premium options' -OinsertPosition='About' \
-  -e 'Theme' -OdarkThemeBackgroundColor='#000000' -OlightThemeBackgroundColor='#FFFFFF' \
-  -e 'Return YouTube Dislike' \
-  -e 'Return YouTube Username' \
-  -e 'SponsorBlock' \
-  -d 'Alternative thumbnails' \
-  -d 'Enable debug logging' \
-  -d 'Translations for YouTube' \
-  -d 'Set Transcript Cookies' \
-  -d 'Disable layout updates' \
-  -d 'Spoof app version' \
-  -d 'Enable gradient loading screen' \
-  -d 'Force player buttons background' \
-  -d 'Hide Shorts dimming' \
-  -d 'Custom double tap length' \
-  -d 'Hide shortcuts' \
+  -OpackageNameYouTube='h1toru.rvm.ytp' \
+  -OappName='YouTube Premium' \
+  -OrvxSettingsLabel='Premium options' -OinsertPosition='About' \
+  -OdarkThemeBackgroundColor='#000000' -OlightThemeBackgroundColor='#FFFFFF' \
   """
+
+included-patches = """\
+  'Change version code' \
+  'GmsCore support' \
+  'Custom branding name for YouTube' \
+  'Settings for YouTube' \
+  'Theme' \
+  'Return YouTube Dislike' \
+  'Return YouTube Username' \
+  'SponsorBlock' \
+  """
+
+excluded-patches = """\
+  'Custom branding icon for YouTube' \
+  'Custom header for YouTube' \
+  'Alternative thumbnails' \
+  'Enable debug logging' \
+  'Translations for YouTube' \
+  'Set Transcript Cookies' \
+  'Disable layout updates' \
+  'Spoof app version' \
+  'Enable gradient loading screen' \
+  'Force player buttons background' \
+  'Hide Shorts dimming' \
+  'Custom double tap length' \
+  'Hide shortcuts' \
+  """
+
 
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 # uptodown-dlurl = "https://youtube.en.uptodown.com/android"
